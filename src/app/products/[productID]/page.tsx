@@ -1,16 +1,25 @@
+import Link from "next/link"
+import { Metadata } from "next"
 
-    import Link from "next/link"
-function ProductDetail({params}:{
-    params: {productID: string}
-}) {
- 
+type Props = {
+  params: {
+    productID: string
+  }
+}
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return {
+    title: `Product ${params.productID}`,
+  }
+}
 
+function ProductDetail({ params }: Props) {
   return (
-   <div className="mt-10 text-center ">
+    <div className="mt-10 text-center ">
       <h1 className="text-3xl">Product Detail {params.productID}</h1>
-       
-        <Link href='/' className="text-2xl mt-5 ml-5 border ">Home</Link>
+      <Link href="/" className="text-2xl mt-5 ml-5 border">
+        Home
+      </Link>
     </div>
   )
 }

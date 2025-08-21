@@ -4,10 +4,12 @@ export default function Home() {
   return (
     <div className="mt-10 text-center ">
       <h1 className="text-3xl">Wellcome Home</h1>
-      <Link href='/about' className="text-2xl mt-20 border  ">About</Link>
-       <Link href='/contact' className="text-2xl mt-5 border  ml-5">Contact</Link>
-        <Link href='/blog' className="text-2xl mt-5 border  ml-5">Blog</Link>
-        <Link href='/products/123' className="text-2xl mt-5 border  ml-5">Products</Link>
+      <div className="flex gap-5 justify-center mt-10">
+      <Link href='/about'  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition ">About</Link>
+       <Link href='/contact'  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact</Link>
+        <Link href='/blog' className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Blog</Link>
+        <Link href='/products'  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Products</Link>
+        </div>
     </div>
   );
 }
