@@ -9,6 +9,8 @@ export default function Home() {
        <Link href='/contact'  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact</Link>
         <Link href='/blog' className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Blog</Link>
         <Link href='/products'  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Products</Link>
+         <Link href='/ForgotPassword'  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Auth</Link>
+         <Link href='/Dashboard' className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Dasbboard</Link>
         </div>
     </div>
   );

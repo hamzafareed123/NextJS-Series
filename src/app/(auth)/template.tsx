@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navLink = [
   { name: "Register", href: "/Register" },
@@ -13,9 +14,14 @@ const navLink = [
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     const pathName = usePathname();
+
+    const [data ,setData] = useState('');
+
   return (
     <div className="mt-10 text-2xl text-center">
       <h1>Layout Page</h1>
+
+      <input type="text" placeholder="Enter Text" value={data} onChange={(e)=>setData(e.target.value)}/>
 
       {navLink.map((link) => {
 
